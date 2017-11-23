@@ -7,3 +7,4 @@ bundle/*/*
 !.ycm_extra_conf.py
 !ycm.vim
 !syntastic.vim
+!py-syntax.vim
