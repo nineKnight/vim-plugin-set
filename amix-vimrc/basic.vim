@@ -53,6 +53,17 @@ set history=500
 filetype plugin on
 filetype indent on
 
+set mouse-=a
+"set mousehide
+
+set cursorline
+set cursorcolumn
+ 
+"highlight CursorLine cterm=none
+"ctermbg=236
+"highlight CursorColumn cterm=none
+"ctermbg=236
+
 " Set to auto read when a file is changed from the outside
 set autoread
 
@@ -157,7 +168,7 @@ endif
 
 try
     "let g:solarized_termcolors=256
-    colorscheme molokai
+    colorscheme dracula
 catch
 endtry
 
@@ -182,9 +193,24 @@ set ffs=unix,dos,mac
 " => Files, backups and undo
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Turn backup off, since most stuff is in SVN, git et.c anyway...
-set nobackup
-set nowb
-set noswapfile
+"set nobackup        "won't create *~ file"
+"set writebackup
+"set noswapfile      "won't create .*.un~ file"
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Turn persistent undo on 
+"    means that you can undo even when you close a buffer/VIM
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+try
+    set undodir=~/.vimundo
+    set undofile
+catch
+endtry
+"if has('persistent_undo')
+    "set undodir=$HOME/.vim/temp_dirs/undodir
+    "set undofile
+"endif
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -288,7 +314,7 @@ set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ 
 " => Editing mappings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Remap VIM 0 to first non-blank character
-map 0 ^
+"map 0 ^
 
 " Move a line of text using ALT+[jk] or Command+[jk] on mac
 nmap <M-j> mz:m+<cr>`z
