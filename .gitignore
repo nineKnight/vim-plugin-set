@@ -8,3 +8,4 @@ bundle/*/*
 !ycm.vim
 !syntastic.vim
 !py-syntax.vim
+!airline.vim
