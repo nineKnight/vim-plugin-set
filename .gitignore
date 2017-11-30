@@ -9,3 +9,5 @@ bundle/*/*
 !syntastic.vim
 !py-syntax.vim
 !airline.vim
+!fzf.vim
+!ale.vim
