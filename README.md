@@ -4,7 +4,7 @@ A set of VIM plugins INSTALLED
 ## Contents
 - [Plugin List](#plugin-list)
 
-## Plugin list
+## Plugin List
 - [VundleVim/Vundle.vim](https://github.com/VundleVim/Vundle.vim.git)
 - [Valloric/YouCompleteMe](https://github.com/Valloric/YouCompleteMe.git)
 - [jiangmiao/auto-pairs](https://github.com/jiangmiao/auto-pairs.git)
