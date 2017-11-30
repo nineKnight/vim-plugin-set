@@ -3,6 +3,7 @@ A set of VIM plugins INSTALLED
 
 ## Contents
 - [Plugin List](#plugin-list)
+- [Installation](#installation)
 
 ## Plugin List
 - [VundleVim/Vundle.vim](https://github.com/VundleVim/Vundle.vim.git)
@@ -26,3 +27,11 @@ A set of VIM plugins INSTALLED
 - [tpope/vim-fugitive](https://github.com/tpope/vim-fugitive.git)
 - [tpope/vim-surround](https://github.com/tpope/vim-surround.git)
 - [airblade/vim-gitgutter](https://github.com/airblade/vim-gitgutter.git)
+
+## Installation
+
+```bash
+git clone https://github.com/nineKnight/vim-plugin-set.git
+cd vim-plugin-set
+bash install.sh
+```
