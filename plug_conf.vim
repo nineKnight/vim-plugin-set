@@ -1,6 +1,6 @@
-source ~/.vim/bundle/YouCompleteMe/ycm.vim
-source ~/.vim/bundle/fzf.vim/fzf.vim
-"source ~/.vim/bundle/syntastic/syntastic.vim
-"source ~/.vim/bundle/python-syntax/py-syntax.vim
-source ~/.vim/bundle/vim-airline/airline.vim
-source ~/.vim/bundle/ale/ale.vim
+source ~/.vim/plugin-ctrl/ycm.vim
+source ~/.vim/plugin-ctrl/fzf.vim
+"source ~/.vim/plugin-ctrl/syntastic.vim
+"source ~/.vim/plugin-ctrl/py-syntax.vim
+source ~/.vim/plugin-ctrl/airline.vim
+source ~/.vim/plugin-ctrl/ale.vim
