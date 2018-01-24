@@ -1,4 +1,4 @@
-#!/bin/bash
+##!/bin/bash
 
 DST=$HOME/.vim
 
@@ -15,13 +15,12 @@ fi
 
 ## setup the new .vimrc
 #cp .vimrc $HOME
+
+## setup .vimrc to manage vim
 ln -s $DST/.vimrc $HOME/.vimrc
 
 ## setup vim plugin manager
-git clone https://github.com/VundleVim/Vundle.vim.git $DST/Vundle.vim
-mv $DST/bundle/Vundle.vim/Vundle.vim $DST/Vundle.vim
-rmdir $DST/bundle/Vundle.vim
-mv $DST/Vundle.vim $DST/bundle/Vundle.vim
+git clone https://github.com/VundleVim/Vundle.vim.git $DST/bundle/Vundle.vim
 
 ## install plugins
 vim +:PluginInstall
