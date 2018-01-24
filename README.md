@@ -31,6 +31,7 @@ A set of VIM plugins INSTALLED
 ## Installation
 
 ```bash
+// Not finished
 git clone https://github.com/nineKnight/vim-plugin-set.git
 cd vim-plugin-set
 bash install.sh
