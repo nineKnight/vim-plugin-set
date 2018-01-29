@@ -26,6 +26,7 @@ Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'klen/python-mode'
 "Plugin 'hdima/python-syntax'
 Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'majutsushi/tagbar'
@@ -35,6 +36,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'airblade/vim-gitgutter'
 "Plugin 'terryma/vim-expand-region'
+"Plugin 'metakirby5/codi.vim'(work error)
+Plugin 'sheerun/vim-polyglot'
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
 " Git plugin not hosted on GitHub
