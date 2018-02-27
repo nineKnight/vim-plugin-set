@@ -426,3 +426,14 @@ function! VisualSelection(direction, extra_filter) range
     let @/ = l:pattern
     let @" = l:saved_reg
 endfunction
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Configurations related to filetypes
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Folding configurations
+autocmd filetype c,cpp setlocal foldmethod=syntax foldlevel=99
+"autocmd filetype python setlocal foldmethod=indent foldlevel=99
+autocmd filetype python setlocal foldlevel=99
+
+
