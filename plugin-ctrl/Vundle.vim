@@ -37,6 +37,10 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'Konfekt/FastFold'
+Plugin 'tmhedberg/SimpylFold'
+"Plugin 'tweekmonster/braceless.vim'
+"Plugin 'pseewald/vim-anyfold'
 "Plugin 'terryma/vim-expand-region'
 "Plugin 'metakirby5/codi.vim'(work error)
 " plugin from http://vim-scripts.org/vim/scripts.html

@@ -6,3 +6,7 @@ source ~/.vim/plugin-ctrl/airline.vim
 source ~/.vim/plugin-ctrl/ale.vim
 
 let g:pymode_folding=0
+
+autocmd filetype c,cpp setlocal foldmethod=syntax foldlevel=99
+"autocmd filetype python setlocal foldmethod=indent foldlevel=99
+autocmd filetype python setlocal foldlevel=99
