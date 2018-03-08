@@ -5,3 +5,5 @@ source ~/.vim/plugin-ctrl/fzf.vim
 source ~/.vim/plugin-ctrl/airline.vim
 source ~/.vim/plugin-ctrl/ale.vim
 source ~/.vim/plugin-ctrl/py-mode.vim
+source ~/.vim/plugin-ctrl/autoformat.vim
+source ~/.vim/plugin-ctrl/ultisnips.vim
