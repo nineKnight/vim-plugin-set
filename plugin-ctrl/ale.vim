@@ -7,7 +7,7 @@ let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 "let g:ale_cpp_gcc_options = '-std=c++11 -Wall'
 "let g:ale_cpp_gcc_executable = 'g++'
 
-"let g:ale_enabled = 0
+let g:ale_enabled = 0
 
 let g:ale_sign_column_always = 1
 
