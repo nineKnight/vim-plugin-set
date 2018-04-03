@@ -1,9 +1,9 @@
-let g:airline#extensions#ale#enabled = 1
-
-let g:airline_powerline_fonts = 1
+"let g:airline_powerline_fonts = 1
 "let g:airline_symbols_ascii = 1
 
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#tab_nr_type = 2 " splits and tab number
+let g:airline#extensions#tabline#show_tab_nr = 0
 let g:airline#extensions#tabline#buffer_nr_show = 1
 
 let g:airline#extensions#tabline#left_sep = ''
