@@ -168,6 +168,7 @@ endif
 
 try
     "let g:solarized_termcolors=256
+    let g:dracula_colorterm=0
     colorscheme dracula
 catch
 endtry

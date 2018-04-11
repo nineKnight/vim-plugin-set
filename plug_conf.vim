@@ -10,3 +10,4 @@ source ~/.vim/plugin-ctrl/ultisnips.vim
 source ~/.vim/plugin-ctrl/ag.vim
 source ~/.vim/plugin-ctrl/autopairs.vim
 source ~/.vim/plugin-ctrl/complete_parameter.vim
+source ~/.vim/plugin-ctrl/nerdtree-git.vim
