@@ -25,8 +25,18 @@ git clone https://github.com/VundleVim/Vundle.vim.git $DST/bundle/Vundle.vim
 ## install plugins
 vim +:PluginInstall
 
+## config trash-cli
+cat << EOF >> ~/.bashrc
+
+# safer delete
+alias rm='echo "This is not the really 'rm', but '\\rm' or 'command rm'."; trash'
+
+EOF
+
 ## config fzf
 cat << EOF >> ~/.bashrc
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
 export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
 export FZF_ALT_C_COMMAND='fd --type d --hidden --follow --exclude .git'
 export FZF_CTRL_T_COMMAND='fd --type f --type d --hidden --follow --exclude .git'
