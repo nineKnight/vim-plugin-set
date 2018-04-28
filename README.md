@@ -41,7 +41,7 @@ A set of VIM plugins INSTALLED
 
 ## Installation
 ```bash
-sudo apt update && apt install -y git silversearcher-ag astyle python-pip
+sudo apt update && apt install -y git silversearcher-ag astyle python-pip universal-ctags
 git clone https://github.com/nineKnight/vim-plugin-set.git ~/.vim
 cd ~/.vim
 bash install.sh
