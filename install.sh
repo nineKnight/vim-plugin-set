@@ -34,7 +34,7 @@ pip install trash-cli
 cat << EOF >> ~/.bashrc
 
 # safer delete
-alias rm='echo "This is not the really 'rm', but '\\rm' or 'command rm'."; trash'
+alias rm="echo \"This is not the really 'rm', but '\\rm' or 'command rm'.\"; trash"
 
 EOF
 
