@@ -49,9 +49,9 @@ then
 complete -F _fzf_path_completion -o default -o bashdefault ag
 complete -F _fzf_dir_completion -o default -o bashdefault tree
 
-export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
-export FZF_ALT_C_COMMAND='fd --type d --hidden --follow --exclude .git'
-export FZF_CTRL_T_COMMAND='fd --type f --type d --hidden --follow --exclude .git'
+export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow'
+export FZF_ALT_C_COMMAND='fd --type d --hidden --follow --exclude .git --no-ignore'
+export FZF_CTRL_T_COMMAND='fd --type f --type d --hidden --follow'
 export FZF_DEFAULT_OPTS="--border --height 40% --extended --cycle --reverse --inline-info"
 export FZF_CTRL_T_OPTS="--border --preview '(highlight -O ansi -l {} 2> /dev/null || cat {} || tree -C {}) 2> /dev/null | head -200'"
 export FZF_ALT_C_OPTS="--border --preview '(highlight -O ansi -l {} 2> /dev/null || cat {} || tree -C {}) 2> /dev/null | head -200'"
