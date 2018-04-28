@@ -46,6 +46,9 @@ then
     cat << EOF >> ~/.bashrc
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
+complete -F _fzf_path_completion -o default -o bashdefault ag
+complete -F _fzf_dir_completion -o default -o bashdefault tree
+
 export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
 export FZF_ALT_C_COMMAND='fd --type d --hidden --follow --exclude .git'
 export FZF_CTRL_T_COMMAND='fd --type f --type d --hidden --follow --exclude .git'

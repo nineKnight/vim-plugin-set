@@ -1,13 +1,3 @@
 # ignore
 bundle/*
 bundle/*/*
-
-# except
-!Vundle.vim
-!.ycm_extra_conf.py
-!ycm.vim
-!syntastic.vim
-!py-syntax.vim
-!airline.vim
-!fzf.vim
-!ale.vim
