@@ -29,7 +29,8 @@ cd $DST/bundle/YouCompleteMe
 cd -
 
 ## config trash-cli
-if [ -e /usr/local/bin/trash ]
+if [ ! -e /usr/local/bin/trash ]
+then
 pip install trash-cli
 cat << EOF >> ~/.bashrc
 
@@ -37,6 +38,7 @@ cat << EOF >> ~/.bashrc
 alias rm="echo \"This is not the really 'rm', but '\\rm' or 'command rm'.\"; trash"
 
 EOF
+fi
 
 ## config fzf
 if [ -d $HOME/.fzf ]
@@ -49,9 +51,9 @@ then
 complete -F _fzf_path_completion -o default -o bashdefault ag
 complete -F _fzf_dir_completion -o default -o bashdefault tree
 
-export FZF_DEFAULT_COMMAND='fd'
+export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --no-ignore'
 export FZF_ALT_C_COMMAND='fd --type d --hidden --follow --exclude .git --no-ignore'
-export FZF_CTRL_T_COMMAND='fd --type f --type d --hidden --follow'
+export FZF_CTRL_T_COMMAND='fd --hidden --follow'
 export FZF_DEFAULT_OPTS="--border --height 40% --extended --cycle --reverse --inline-info"
 export FZF_CTRL_T_OPTS="--border --preview '(highlight -O ansi -l {} 2> /dev/null || cat {} || tree -C {}) 2> /dev/null | head -200'"
 export FZF_ALT_C_OPTS="--border --preview '(highlight -O ansi -l {} 2> /dev/null || cat {} || tree -C {}) 2> /dev/null | head -200'"
