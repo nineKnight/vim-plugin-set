@@ -11,3 +11,4 @@ source ~/.vim/plugin-ctrl/ag.vim
 source ~/.vim/plugin-ctrl/autopairs.vim
 source ~/.vim/plugin-ctrl/complete_parameter.vim
 source ~/.vim/plugin-ctrl/nerdtree-git.vim
+source ~/.vim/plugin-ctrl/gitgutter.vim
