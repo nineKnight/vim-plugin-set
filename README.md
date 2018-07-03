@@ -3,6 +3,7 @@ A set of VIM plugins INSTALLED
 
 ## Contents
 - [Plugin List](#plugin-list)
+- [Prerequisite](#prerequisite)
 - [Installation](#installation)
 
 ## Plugin List
@@ -39,10 +40,16 @@ A set of VIM plugins INSTALLED
 <!--- [vim-cpp-enhanced-highlight](https://github.com/octol/vim-cpp-enhanced-highlight.git)-->
 <!--- [python-syntax](https://github.com/hdima/python-syntax.git)-->
 
+### Prerequisite
+```bash
+sudo apt update && apt install -y git silversearcher-ag astyle python-pip tree build-essential cmake python-dev python3-dev python-setuptools
+sudo apt install -y universal-ctags 
+```
+
 ## Installation
 ```bash
-sudo apt update && apt install -y git silversearcher-ag astyle python-pip universal-ctags tree
 git clone https://github.com/nineKnight/vim-plugin-set.git ~/.vim
 cd ~/.vim
 bash install.sh
 ```
+
