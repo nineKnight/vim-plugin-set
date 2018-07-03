@@ -31,21 +31,26 @@ cd -
 ## config trash-cli
 if [ ! -e /usr/local/bin/trash ]
 then
-pip install trash-cli
-cat << EOF >> ~/.bashrc
+    pip install trash-cli
+    if [ -e /usr/local/bin/trash ]
+    then
+        cat << EOF >> ~/.bashrc
 
 # safer delete
 alias rm="echo \"This is not the really 'rm', but '\\rm' or 'command rm'.\"; trash"
 
 EOF
+    fi
 fi
 
 ## config fzf
-if [ -d $HOME/.fzf ]
+if [ ! -d $HOME/.fzf ]
 then
     git clone --depth 1 https://github.com/junegunn/fzf.git $HOME/.fzf
     $HOME/.fzf/install
-    cat << EOF >> ~/.bashrc
+    if [ -e $HOME/.fzf/bin/fzf ]
+    then
+        cat << EOF >> ~/.bashrc
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 complete -F _fzf_path_completion -o default -o bashdefault ag
@@ -58,6 +63,7 @@ export FZF_DEFAULT_OPTS="--border --height 40% --extended --cycle --reverse --in
 export FZF_CTRL_T_OPTS="--border --preview '(highlight -O ansi -l {} 2> /dev/null || cat {} || tree -C {}) 2> /dev/null | head -200'"
 export FZF_ALT_C_OPTS="--border --preview '(highlight -O ansi -l {} 2> /dev/null || cat {} || tree -C {}) 2> /dev/null | head -200'"
 EOF
+    fi
 fi
 
 ## config fd
@@ -66,4 +72,6 @@ echo "donwload the latest one plz"
 echo "i.e. fd_7.0.0_amd64.deb"
 echo "and then"
 echo "sudo dpkg -i fd_7.0.0_amd64.deb"
+
+source $HOME/.bashrc
 
