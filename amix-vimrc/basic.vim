@@ -203,15 +203,16 @@ set ffs=unix,dos,mac
 " => Turn persistent undo on 
 "    means that you can undo even when you close a buffer/VIM
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-try
+"try
+    "set undodir=~/.vimundo
+    "set undofile
+"catch
+"endtry
+if has('persistent_undo')
+    "set undodir=$HOME/.vim/temp_dirs/undodir
     set undodir=~/.vimundo
     set undofile
-catch
-endtry
-"if has('persistent_undo')
-    "set undodir=$HOME/.vim/temp_dirs/undodir
-    "set undofile
-"endif
+endif
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
