@@ -108,6 +108,8 @@ set ruler
 
 " Height of the command bar
 set cmdheight=2
+" Show whatever input
+set showcmd
 
 " A buffer becomes hidden when it is abandoned
 set hid
