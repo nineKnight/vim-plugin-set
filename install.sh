@@ -25,7 +25,12 @@ vim +:PluginInstall
 
 ## config YCM
 cd $DST/bundle/YouCompleteMe
-./install.py --clang-completer --js-completer
+if [ -e /usr/bin/python3 ] || [ -e /usr/local/bin/python3 ]
+then
+    python3 ./install.py --clang-completer --js-completer
+else
+    ./install.py --clang-completer --js-completer
+fi
 cd -
 
 ## config trash-cli
