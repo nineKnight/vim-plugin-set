@@ -36,7 +36,12 @@ cd -
 ## config trash-cli
 if [ ! -e /usr/local/bin/trash ]
 then
-    pip install trash-cli
+    if [ -e /usr/bin/pip3 ] || [ -e /usr/local/bin/pip3 ]
+    then
+        pip3 install trash-cli
+    else
+        pip install trash-cli
+    fi
     if [ -e /usr/local/bin/trash ]
     then
         cat << EOF >> ~/.bashrc
