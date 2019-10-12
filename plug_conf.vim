@@ -14,6 +14,7 @@ source ~/.vim/plugin-ctrl/autopairs.vim
 source ~/.vim/plugin-ctrl/complete_parameter.vim
 source ~/.vim/plugin-ctrl/nerdtree-git.vim
 source ~/.vim/plugin-ctrl/gitgutter.vim
+source ~/.vim/plugin-ctrl/termdebug.vim
 "source ~/.vim/plugin-ctrl/easymotion.vim
 "source ~/.vim/plugin-ctrl/fugitive.vim
 "source ~/.vim/plugin-ctrl/grepper.vim

@@ -1,7 +1,7 @@
 "let g:UltiSnipsExpandTrigger="<return>"
 "let g:UltiSnipsExpandTrigger = "<NULL>"
 let g:ulti_expand_or_jump_res = 0
-function ExpandSnippetOrCarriageReturn()
+function! ExpandSnippetOrCarriageReturn()
     let snippet = UltiSnips#ExpandSnippetOrJump()
     if g:ulti_expand_or_jump_res > 0
         return snippet
