@@ -11,3 +11,4 @@ let g:NERDTreeIndicatorMapCustom = {
     \ "Unknown"   : "?"
     \ }
 
+let NERDTreeIgnore=['\.pyc', '\~$']
