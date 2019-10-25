@@ -10,8 +10,10 @@ source ~/.vim/plugin-ctrl/ultisnips.vim
 source ~/.vim/plugin-ctrl/multi-cursors.vim
 source ~/.vim/plugin-ctrl/ctrlsf.vim
 source ~/.vim/plugin-ctrl/ag.vim
-source ~/.vim/plugin-ctrl/autopairs.vim
-source ~/.vim/plugin-ctrl/complete_parameter.vim
+if !has("patch-8.1.1875")
+    source ~/.vim/plugin-ctrl/autopairs.vim
+    source ~/.vim/plugin-ctrl/complete_parameter.vim
+endif
 source ~/.vim/plugin-ctrl/nerdtree-git.vim
 source ~/.vim/plugin-ctrl/gitgutter.vim
 source ~/.vim/plugin-ctrl/termdebug.vim

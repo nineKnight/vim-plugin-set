@@ -45,7 +45,9 @@ Plugin 'Konfekt/FastFold'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
-Plugin 'tenfyzhong/CompleteParameter.vim'
+if !has("patch-8.1.1875")
+    Plugin 'tenfyzhong/CompleteParameter.vim'
+endif
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'dyng/ctrlsf.vim'
 Plugin 'mileszs/ack.vim'

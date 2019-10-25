@@ -27,9 +27,9 @@ vim +:PluginInstall
 cd $DST/bundle/YouCompleteMe
 if [ -e /usr/bin/python3 ] || [ -e /usr/local/bin/python3 ]
 then
-    python3 ./install.py --clang-completer --js-completer
+    python3 ./install.py --clangd-completer --js-completer
 else
-    ./install.py --clang-completer --js-completer
+    ./install.py --clangd-completer --js-completer
 fi
 cd -
 
