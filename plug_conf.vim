@@ -20,3 +20,4 @@ source ~/.vim/plugin-ctrl/termdebug.vim
 "source ~/.vim/plugin-ctrl/easymotion.vim
 "source ~/.vim/plugin-ctrl/fugitive.vim
 "source ~/.vim/plugin-ctrl/grepper.vim
+source ~/.vim/plugin-ctrl/rainbow.vim
